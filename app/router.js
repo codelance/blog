@@ -4,6 +4,7 @@ define([ 'app','backbone', 'views/loop', 'views/archives'],
         var Router = Backbone.Router.extend({
             routes:{
                 "":"defaultRoute",
+                "blog/":"defaultRoute",
                 "archives":"show_archive",
                 '*notFound':"not_found"
             },
