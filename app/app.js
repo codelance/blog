@@ -6,7 +6,7 @@ define([ 'underscore', 'backbone', 'layoutmanager' ],
         });
 
         var app = {
-            root:'/',
+            root:'/blog/',
             vent: _.extend({}, Backbone.Events)
         };
 
