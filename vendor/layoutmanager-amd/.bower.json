@@ -1,0 +1,17 @@
+{
+  "name": "layoutmanager-amd",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/playlyfe/backbone.layoutmanager-amd.git"
+  },
+  "homepage": "https://github.com/playlyfe/backbone.layoutmanager-amd",
+  "_release": "65e8489887",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "65e848988791cf613b54983fc2a0e171dc58f342"
+  },
+  "_source": "git://github.com/playlyfe/backbone.layoutmanager-amd.git",
+  "_target": "*",
+  "_originalSource": "layoutmanager-amd"
+}

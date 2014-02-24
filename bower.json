@@ -1,0 +1,18 @@
+{
+  "name": "Brandon's Blog",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "latest",
+    "jquery-ui": "latest",
+    "layoutmanager-amd": "latest",
+    "backbone-amd": "latest",
+    "requirejs": "latest",
+    "underscore-amd": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<section class="blog">
+    <div class="container">
+        <div id="main" class="row">
+        <!-- single post [post without image] -->
+        <div class="single-post">
+            <!-- post content -->
+            <div class="post-content">
+                <div class="span12">
+                    <!-- post inner content -->
+                    <div class="post-inner-content">
+                        <h2 class="post-header">{{ page.title }}</h2>
+                        <!-- meta -->
+                        <div class="post-meta">
+                        </div>
+                        <!-- end post meta -->
+                        <!-- post main content -->
+                        <div class="main-content single-post-main-content">
+                            {{ content }}
+                        </div>
+                        <!-- end main content -->
+                        <div class="post-share">
+                            <div class="tags">
+                                {% for tag in page.tags %}
+                                    <a href="#">{{ tag }}</a>
+                                {% endfor %}
+                            </div>
+                            <div class="share-box">
+                                <div class="fb-share-button" data-bypass="true" data-href="/{{ page.url }}" data-type="button_count"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end inner content -->
+                </div>
+                <!-- end span12 -->
+            </div>
+            <!-- end post content -->
+        </div>
+        <!-- end single post -->
+        </div>
+    </div>
+</section>
