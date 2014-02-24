@@ -1,0 +1,41 @@
+---
+title: Archives
+---
+
+<div class="single-post">
+    <!-- post content -->
+    <div class="post-content">
+        <div class="span12">
+            <!-- post inner content -->
+            <div class="post-inner-content">
+                <h2>Archives</h2>
+                <!-- margin -->
+                <div class="margin-half"></div>
+                <div class="margin"></div>
+                <!-- accordion -->
+                <div class="accordion opened">
+
+                    {% for month in site.months %}
+                    <div class="item">
+                        <a href="#" data-bypass="true" class="head head-active">{{ month | date:"%B" }}
+                            <small>{{ month | date:"%Y" }}</small></a>
+                        <!-- Content -->
+                        <div class="item-content" style="display: block;">
+                            <ul>
+                                {% for post in site.posts_by_month[month] %}
+                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div><!-- End Content -->
+                    </div><!-- End -->
+                    {% endfor %}
+                </div>
+                <!-- end accordion -->
+            </div>
+            <!-- end inner content -->
+            <div class="divider"></div>
+        </div>
+        <!-- end span12 -->
+    </div>
+    <!-- end post content -->
+</div>

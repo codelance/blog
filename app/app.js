@@ -77,10 +77,11 @@ define([ 'underscore', 'backbone', 'layoutmanager' ],
                 } else {
                     // Create a new Layout.
                     this.layout = new Backbone.Layout(_.extend({
-                        el: "#main"
+                        el: "#main", events: {}
                     }, options));
                 }
 
+                Backbone.Layout.setupView(view, {events:{}});
                 this.layout.setView(view).render();
 
                 return this.layout;

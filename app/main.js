@@ -19,7 +19,6 @@ require([ 'app', 'router', 'backbone' ],
             if (href && href.indexOf('#') === 0) {
                 // Stop the default event
                 evt.preventDefault();
-
                 // `Backbone.history.navigate` is sufficient for all Routers
                 Backbone.history.navigate(href, true);
             }

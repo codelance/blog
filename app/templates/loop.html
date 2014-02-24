@@ -1,0 +1,51 @@
+---
+title: Blog
+---
+
+{% for post in site.posts %}
+<!-- single post [post without image] -->
+<div class="single-post">
+    <!-- post content -->
+    <div class="post-content">
+        <div class="span12">
+            <!-- post inner content -->
+            <div class="post-inner-content">
+                <h2 class="post-header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <!-- meta -->
+                <div class="post-meta">
+                    <span class="date">{{ post.date | date_to_string }}</span>
+                    <!--<span class="comments">0 Comments</span>-->
+                </div>
+                <!-- end post meta -->
+                <!-- post main content -->
+                <div class="main-content">
+                    {{ post.excerpt }}
+                </div>
+                <!-- end main content -->
+                <div class="clearfix"></div>
+                <!-- read more button -->
+                <div class="readmore">
+                    <a href="{{ post.url }}" class="readmore-button button">Read More</a>
+                </div>
+                <!-- ene read more -->
+            </div>
+            <!-- end inner content -->
+        </div>
+        <!-- end span12 -->
+    </div>
+    <!-- end post content -->
+</div>
+<!-- end single post -->
+{% endfor %}
+
+{% if site.posts.size == 0  %}
+<div class="single-post">
+    <div class="post-content">
+        <div class="span12">
+            <div class="post-inner-content">
+                <h2 class="post-header"><a href="#">No post to display yet...stay tuned</a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
